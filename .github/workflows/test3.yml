@@ -1,0 +1,9 @@
+on:
+  pull_request:
+
+jobs:
+  on_push:
+    runs-on: ubuntu_latest
+    steps:
+      - name: sassasasasas
+        run: echo "Saaasasa"
