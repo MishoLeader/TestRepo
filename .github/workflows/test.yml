@@ -1,0 +1,36 @@
+  on: [push, pull_request]
+  env:
+    mascot: Mona
+    super_duper_var: totally_awesome
+
+  jobs:
+    normal-ci:
+      runs-on: ubuntu-latest
+
+      steps:
+        - run: echo 'Hi ${{ env.mascot }}'  # Hi Mona s
+
+        - uses: actions/checkout@v3
+        - name: t1
+          env:
+            job_cont : ${{ toJson(github) }}
+          run:  echo '$job_cont'
+
+        - name: t2
+          env:
+            job_2: ${{ toJson(job) }}
+          run: echo '$job_2'
+
+    pull_ci:
+      runs-on: ubuntu-latest
+      if: ${{ github.event_name == 'pull_request' }}
+
+      steps:
+        - uses: actions/checkout@v3
+                  - name: Run PR CI
+                  run: ./run-additional-pr-ci
+
+
+# informaciaze access aris context da contextze access aris expression(ara marto)
+# ${{ <expression> }}
+
