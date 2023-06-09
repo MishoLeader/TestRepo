@@ -1,0 +1,2 @@
+public class SomeFeature {
+}
