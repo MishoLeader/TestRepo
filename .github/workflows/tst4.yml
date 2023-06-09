@@ -5,5 +5,5 @@ jobs:
   on_push:
     runs-on: ubuntu_latest
     steps:
-      - name: sassasassasdsdsasas
+      - name: sassasassasdsddssasas
         run: echo "Saadsdsdsdasasa"
