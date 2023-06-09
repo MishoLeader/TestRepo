@@ -1,9 +1,0 @@
-on:
-  push:
-
-jobs:
-  on_push:
-    runs-on: ubuntu_latest
-    steps:
-      - name: sassasassasdsasasssssssssssssddssasas
-        run: echo "Saxzszadsdsdsdasasa"
